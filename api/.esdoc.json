@@ -1,0 +1,16 @@
+{
+  "source": "./src",
+  "destination": "./documentation",
+  "excludes": ["config/index.js"],
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "coverage": {
+          "enable": false
+        }
+      }
+    },
+    {"name": "esdoc-node"}
+  ]
+}
