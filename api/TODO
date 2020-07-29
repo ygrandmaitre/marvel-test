@@ -1,0 +1,3 @@
+* Add more unit test
+* mutualize character model between api and scraper
+* Set openapi to validate input and have nice documentation

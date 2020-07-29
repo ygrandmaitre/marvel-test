@@ -1,0 +1,3 @@
+* Add ajv to verify the schema response from Marvel API
+* See to use MongoDB bulk insert to improve insertion performance.
+* Instead of create index and validator shcema at te beginning ot the app create Migration process

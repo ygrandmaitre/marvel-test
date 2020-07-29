@@ -1,0 +1,51 @@
+{
+  "name": "marvel-scrapper",
+  "version": "0.0.1",
+  "description": "Microservice to scrap data from api Marvel",
+  "main": "lib/index.js",
+  "license": "private",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": "10.16.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ygrandmaitre/marvel-test.git"
+  },
+  "scripts": {
+    "lint": "npm run prettier && npm run eslint",
+    "eslint": "eslint .",
+    "prettier": "prettier -l '{src,test}/**/*.{js,yml,yaml,json}'",
+    "mocha": "NODE_ENV=test mocha --bail",
+    "coverage": "LOGGER_LEVEL=fatal NODE_ENV=test nyc _mocha",
+    "doc": "esdoc",
+    "start": "node src/marvel.js",
+    "test": "npm run lint && npm run coverage"
+  },
+  "author": "Yann Grandmaitre",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-subset": "1.6.0",
+    "esdoc": "1.1.0",
+    "esdoc-node": "1.0.5",
+    "esdoc-standard-plugin": "1.0.0",
+    "eslint": "6.5.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-plugin-import": "2.18.2",
+    "mocha": "6.2.1",
+    "nock": "11.4.0",
+    "nyc": "14.1.1",
+    "prettier": "1.18.2",
+    "sinon": "7.5.0",
+    "sinon-chai": "3.3.0",
+    "supertest": "4.0.2"
+  },
+  "dependencies": {
+    "mongodb": "^3.3.2",
+    "superagent": "5.1.0",
+    "winston": "^3.2.1"
+  }
+}

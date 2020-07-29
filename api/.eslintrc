@@ -1,0 +1,12 @@
+{
+  "extends": ["prettier"],
+  "parserOptions": {
+    "sourceType": "script",
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "metrics/metrics-documentation": 0,
+    "class-methods-use-this": 0,
+    "require-await": 0
+  }
+}
