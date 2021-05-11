@@ -47,7 +47,7 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "http-status-code": "^2.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mongodb": "^3.3.2",
     "winston": "^3.2.1"
   }
